@@ -1,0 +1,264 @@
+@media (max-width: 1100px) {
+    .dashboard-best-batik {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .dashboard-best-batik .dashboard-best-batik-gambar {
+        max-width: 600px;
+        /* Maintain the maximum width */
+        background-color: #C0C0C0;
+        border-radius: 10px;
+    }
+
+    .dashboard-best-batik .dashboard-best-batik-description {
+        max-width: 400px;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .dashboard-products {
+        text-align: center;
+        max-width: 300px;
+        max-height: 330px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .dashboard-products ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .dashboard-products ul li {
+        display: flex;
+        text-align: left;
+        align-items: center;
+        gap: 10px;
+        flex-grow: 1;
+    }
+
+    .dashboard-products .dashboard-products-title {
+        margin-bottom: 10px;
+    }
+
+    .dashboard-products .dashboard-products-image {
+        width: 50px;
+    }
+
+    .dashboard-founders h2,
+    .dashboard-products .dashboard-products-title h2,
+    .dashboard-best-batik .dashboard-best-batik-description h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .kontak-container {
+        display: flex;
+        flex-wrap: wrap;
+        /* Agar kolom-kolom bisa turun ke bawah jika tidak muat sejajar */
+        justify-content: center;
+        /* Posisikan konten ke tengah */
+        gap: 20px;
+    }
+
+    .kontak-left-column,
+    .kontak-right-column {
+        flex-basis: calc(50% - 20px);
+        /* Setengah dari lebar kontak-container, dikurangi gap */
+        margin-right: 20px;
+        /* Menambahkan sedikit ruang di antara kolom */
+        margin-bottom: 20px;
+        /* Memberikan ruang di bawah setiap kolom */
+    }
+
+    .kontak-left-column {
+        margin-right: 0;
+        /* Tetapkan margin kanan */
+    }
+
+    .kontak-right-column {
+        margin-right: 0;
+        /* Hapus margin kanan pada kolom kanan */
+    }
+
+    .kontak-form textarea {
+        width: 100%;
+        /* Atur textarea menjadi lebar penuh */
+    }
+}
+
+@media (max-width: 950px) {
+    .dashboard-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .dashboard-founders .dashboard-foto {
+        width: 150px;
+    }
+
+    .card {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero-text {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    .card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .card-content h2 {
+        font-size: 20px;
+    }
+
+    .card-content p {
+        font-size: 12px;
+    }
+
+    .card-section{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    header {
+        justify-content: flex-start;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header .login {
+        display: none;
+    }
+
+    header::before {
+        content: '☰';
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        margin-right: auto;
+    }
+
+    .dashboard-founders h2,
+    .dashboard-products .dashboard-products-title h2,
+    .dashboard-best-batik .dashboard-best-batik-description h2 {
+        font-size: 20px;
+    }
+
+    .dashboard-products ul li {
+        font-size: 14px;
+    }
+
+    .dashboard-founders .dashboard-founder p {
+        font-size: 14px;
+    }
+
+    .rincian-content {
+        flex-direction: column; /* Ubah menjadi satu kolom */
+        padding: 20px; /* Kurangi padding */
+    }
+
+    .rincian-best-batik,
+    .rincian-products {
+        max-width: 100%; /* Gunakan lebar maksimum */
+    }
+
+    .rincian-best-batik {
+        margin-bottom: 20px; /* Berikan jarak antara bagian */
+    }
+
+    .rincian-products {
+        text-align: left; /* Atur teks ke kiri */
+    }
+
+    .rincian-products ul li {
+        display: block; /* Ubah item produk menjadi blok */
+        text-align: left; /* Atur teks ke kiri */
+    }
+
+    .rincian-products .rincian-products-image {
+        margin-right: 10px; /* Berikan jarak antara gambar dan teks */
+    }
+
+    .alamat-toko,
+    .nama-toko,
+    .deskripsi-toko {
+        font-size: 14px; /* Ukuran font lebih kecil */
+    }
+}
+
+@media (max-width: 650px) {
+    .dashboard-best-batik .dashboard-best-batik-gambar {
+        max-width: 500px;
+    }
+
+    .dashboard-best-batik .dashboard-best-batik-description {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .hero-text {
+        font-size: 28px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .dashboard-best-batik .dashboard-best-batik-gambar {
+        max-width: 300px;
+    }
+}
