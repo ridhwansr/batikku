@@ -12,7 +12,28 @@ body {
     background-color: #EFEFEF;
 }
 
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4{
+    font-size: 16px;
+}
+
+p {
+    font-size: 14px;
+}
+
 header {
+    font-size: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,7 +88,6 @@ header .login {
 
 header .login button {
     padding: 10px 20px;
-    /* border: 2px solid #007BFF; */
     background-color: white;
     color: black;
     cursor: pointer;
@@ -90,12 +110,9 @@ header .login button:active {
     position: relative;
     display: flex;
     justify-content: flex-start;
-    /* Aligns items to the left */
     align-items: center;
-    /* Vertically centers items */
     padding: 50px 20px;
     height: 100vh;
-    /* Makes the hero section full screen height */
     background-color: #F5F5F5;
 }
 
@@ -140,7 +157,6 @@ header .login button:active {
 }
 
 .hero h1 {
-    font-size: 36px;
     font-weight: bold;
 }
 
@@ -169,7 +185,8 @@ header .login button:active {
 }
 
 .dashboard-products {
-    width: 300px;
+    text-align: center;
+    width: 400px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -217,6 +234,7 @@ header .login button:active {
     display: inline-block;
     margin: 0 20px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .dashboard-founders .dashboard-foto {
@@ -254,7 +272,7 @@ header .login button:active {
     align-items: center;
 }
 
-.rincian-best-batik .gambar-dan-alamat {
+.rincian-best-batik .rincian-gambar-dan-alamat {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -276,12 +294,10 @@ header .login button:active {
 
 .rincian-alamat-toko p {
     display: inline-block;
-    /* Mengatur agar latar belakang menyesuaikan teks */
     background-color: white;
     padding: 10px;
     border-radius: 10px;
     text-align: left;
-    font-size: 14px;
     margin: 0;
     /* Menghilangkan margin default pada p */
 }
@@ -302,7 +318,6 @@ header .login button:active {
 .rincian-deskripsi-toko {
     font-size: 16px;
     margin-top: 20px;
-    /* Sesuaikan dengan jarak yang diinginkan */
 }
 
 .rincian-products {
@@ -312,13 +327,9 @@ header .login button:active {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    /* Tetap rata tengah */
     max-width: 400px;
-    /* Menyesuaikan lebar maksimum produk */
     margin: auto;
-    /* Untuk membuatnya rata tengah */
     margin-top: 0;
-    /* Menghapus margin-top agar nempel di atas */
 }
 
 .rincian-products ul {
@@ -403,7 +414,6 @@ header .login button:active {
 .card-content {
     padding: 20px;
     text-align: center;
-
 }
 
 .card-content a {
@@ -413,11 +423,9 @@ header .login button:active {
 
 .card-content h2 {
     margin-bottom: 10px;
-    font-size: 24px;
 }
 
 .card-content p {
-    font-size: 16px;
     color: #555;
 }
 
@@ -439,12 +447,10 @@ header .login button:active {
 }
 
 .kontak-left-column h1 {
-    font-size: 24px;
     margin-bottom: 20px;
 }
 
 .kontak-left-column p {
-    font-size: 14px;
     line-height: 1.6;
     color: #666;
     text-align: justify;
@@ -525,14 +531,12 @@ header .login button:active {
     border-radius: 10px;
 }
 
-.kontak-info h2 {
+.kontak-info h4 {
     margin-top: -25px;
-    font-size: 18px;
     color: #333;
 }
 
 .kontak-info p {
-    font-size: 14px;
     color: #666;
 }
 
