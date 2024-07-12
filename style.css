@@ -24,12 +24,36 @@ h3 {
     font-size: 22px;
 }
 
-h4{
+h4 {
     font-size: 16px;
 }
 
 p {
     font-size: 14px;
+}
+
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    text-decoration: none;
+    z-index: 100;
+    border-radius: 4px;
+    transition: top 0.3s;
+}
+
+.skip-to-content:focus {
+    top: 10px;
+}
+
+.hamburger-menu {
+    display: none;
 }
 
 header {
@@ -52,7 +76,7 @@ header .logo {
 }
 
 header .logo img {
-    width: 100px;
+    width: 150px;
     margin-right: 10px;
 }
 
@@ -71,6 +95,12 @@ header nav ul li {
 }
 
 header nav ul li a {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+    line-height: 44px;
+    text-align: center;
+    vertical-align: middle;
     text-decoration: none;
     font-weight: bold;
     color: rgb(255, 255, 255);
@@ -87,6 +117,8 @@ header .login {
 }
 
 header .login button {
+    min-height: 44px;
+    min-width: 44px;
     padding: 10px 20px;
     background-color: white;
     color: black;
@@ -129,7 +161,6 @@ header .login button:active {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Ensures the image covers the entire hero section */
 }
 
 .hero-text {
@@ -249,9 +280,7 @@ header .login button:active {
 
 .dashboard-founder .dashboard-foto:hover {
     transform: scale(1.1);
-    /* Memperbesar gambar saat hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Menambahkan bayangan saat hover */
 }
 
 /* Halaman Rincian */
@@ -299,13 +328,11 @@ header .login button:active {
     border-radius: 10px;
     text-align: left;
     margin: 0;
-    /* Menghilangkan margin default pada p */
 }
 
 .rincian-nama-toko {
     font-size: 24px;
     background: none;
-    /* Tidak ada latar belakang */
 }
 
 .rincian-garis-panjang {
@@ -395,12 +422,10 @@ header .login button:active {
     align-items: center;
     padding: 20px;
     transition: transform 0.3s ease-in-out;
-    /* Menambahkan transisi untuk efek smooth */
 }
 
 .card:hover {
     transform: scale(1.05);
-    /* Memperbesar ukuran saat hover */
 }
 
 
@@ -417,6 +442,12 @@ header .login button:active {
 }
 
 .card-content a {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+    line-height: 44px;
+    text-align: center;
+    vertical-align: middle;
     text-decoration: none;
     color: rgb(243, 198, 76);
 }
@@ -459,12 +490,6 @@ header .login button:active {
 .kontak-info {
     margin-top: 20px;
 }
-
-/* .kontak-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-} */
 
 .kontak-icon {
     width: 50px;
@@ -598,6 +623,7 @@ label.kontak {
 }
 
 .kontak-button {
+    min-height: 44px;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -609,6 +635,166 @@ label.kontak {
 }
 
 .kontak-button:hover {
+    background-color: #555;
+}
+
+/* CRUD */
+
+.tokoku-tabel-toko {
+    margin: 20px 0;
+}
+
+.tokoku-tabel-container {
+    overflow-x: auto;
+    padding: 10px;
+    position: relative;
+}
+
+.tokoku-tabel-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tokoku-tabel-container th,
+.tokoku-tabel-container td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tokoku-tabel-container th {
+    background-color: #f2f2f2;
+}
+
+.tokoku-toko-image {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.tokoku-ubah {
+    display: inline-block;
+    width: auto;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    padding: 0 20px;
+    margin-right: 5px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.tokoku-hapus {
+    display: inline-block;
+    width: auto;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    padding: 0 20px;
+    margin-right: 5px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #f44336;
+}
+
+.tokoku-tambah-link {
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    min-height: 44px;
+}
+
+.tambahdata-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Set height sesuai kebutuhan, disini 100vh untuk memenuhi viewport */
+
+}
+
+/* tambah data dan ubah data*/
+.tambahdata-column {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 800px;
+    /* Tambahkan max-width agar tidak terlalu besar di layar lebar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Opsional, tambahkan shadow agar terlihat lebih baik */
+}
+
+.tambahdata-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.tambahdata-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.tambahdata-input-group input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.tambahdata-form textarea {
+    resize: vertical;
+    height: 150px;
+    width: 100%;
+    /* Sesuaikan agar mengikuti ukuran parent */
+    background-color: #d5d5d5;
+}
+
+.tambahdata-input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+label.tambahdata {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.tambahdata-input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #d5d5d5;
+}
+
+.tambahdata-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tambahdata-button:hover {
     background-color: #555;
 }
 
