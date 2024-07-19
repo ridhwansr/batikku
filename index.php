@@ -111,8 +111,8 @@ include 'header.php';
         <p>Arisman Mahfud</p>
     </div>
     <div class="dashboard-founder">
-        <a href="https://example.com/nama3" target="_blank">
-            <img src="assets/image/masse.webp" alt="Foto" class="dashboard-foto">
+        <a href="https://www.linkedin.com/in/andhikadananugraha/" target="_blank">
+            <img src="assets/image/andhikadananugraha.jpg" alt="Andhika DN" class="dashboard-foto">
         </a>
         <p>Nama 3</p>
     </div>
